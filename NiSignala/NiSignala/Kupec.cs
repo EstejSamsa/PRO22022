@@ -8,8 +8,8 @@ namespace NiSignala
 {
     internal class Kupec
     {
-        private string ime;
-        private decimal stanje;
+        protected string ime;
+        protected decimal stanje;
 
         public string Ime { get => ime; set => ime = value; }
         public decimal Stanje { get => stanje; }
@@ -23,7 +23,7 @@ namespace NiSignala
             switch (tip)
             {
                 case TipKlica.Stacionarno:
-                    stanje += min * 0.2m;
+                    stanje += min * 0.12m;
                     break;
                 case TipKlica.Mobilno: 
                     stanje += min * 0.03m;
